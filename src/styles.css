@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Aeonik";
+  src: url(fonts/AeonikTRIAL-Regular.otf);
+}
+
+body {
+  background-color: #232121;
+  margin: 0 30px;
+}
+
+.navbar-brand {
+  font-family: Aeonik, sans-serif;
+  letter-spacing: 4%;
+  line-height: 150%;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+}
+
+.navbar {
+  background-color: #232121;
+}
+
+.navbar,
+.navbar .navbar-brand:hover,
+.nav-link,
+.navbar-nav .nav-link:hover {
+	color: #fff;
+}
+
+.navbar-nav .nav-link {
+	margin-left: 30px;
+}
+
+.navbar-toggler {
+	background-color: #fff;
+}
