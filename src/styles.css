@@ -5,7 +5,7 @@
 
 :root {
   --main-color: #f5f3f0;
-  --text-color: #434040;
+  --text-color: #232121;
   --paragraph-color: #656464;
 }
 
@@ -18,4 +18,17 @@ body {
   background-color: var(--main-color);
   margin: 0 30px;
   font-family: Aeonik, "Segoe UI", Tahoma, sans-serif;
+}
+
+img {
+  width: 50%;
+  border-radius: 35px;
+}
+
+h1 {
+  width: 50%;
+  font-size: 144px;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  color: var(--text-color);
 }
