@@ -11,24 +11,189 @@
 
 * {
   margin: 0;
-  padding: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--main-color);
-  margin: 0 30px;
   font-family: Aeonik, "Segoe UI", Tahoma, sans-serif;
 }
 
-img {
-  width: 50%;
-  border-radius: 35px;
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
 }
 
-h1 {
-  width: 50%;
-  font-size: 144px;
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.hero img {
+  max-width: 500px;
+  border-radius: 25px;
+}
+
+.hero h1 {
+  font-size: 8rem;
   text-transform: uppercase;
-  letter-spacing: 0.8rem;
   color: var(--text-color);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.presentation, .goal {
+  display: inline-block;
+  width: 40%;
+  color: var(--paragraph-color);
+}
+
+.presentation {
+  padding-right: 50px;
+  margin-top: 50px;
+}
+
+/* xss */
+
+@media (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero img {
+    max-width: 150px;
+  }
+
+  .presentation, .goal {
+  display: inline;
+  font-size: 0.5rem;
+}
+}
+
+/* xs */
+
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+
+  .hero h1 {
+    font-size: 2.75rem;
+  }
+
+  .hero img {
+    max-width: 200px;
+  }
+
+  .presentation, .goal {
+  display: inline;
+  font-size: 0.5rem;
+}
+}
+
+/* sm */
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero img {
+    max-width: 300px;
+  }
+
+  .presentation, .goal {
+  display: inline-block;
+  font-size: 0.6rem;
+}
+}
+
+/* md */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .hero h1 {
+    font-size: 4.5rem;
+  }
+}
+
+/* lg */
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .hero h1 {
+    font-size: 6rem;
+  }
+
+  .hero img {
+    max-width: 400px;
+  }
+
+  .presentation, .goal {
+  display: inline-block;
+  font-size: 0.8rem;
+}
+}
+
+/* xl */
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .hero h1 {
+    font-size: 8rem;
+  }
+
+  .hero img {
+    max-width: 500px;
+  }
+}
+
+/* 2xl */
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+
+  .hero h1 {
+    font-size: 9rem;
+  }
+
+  .hero img {
+    max-width: 600px;
+  }
 }

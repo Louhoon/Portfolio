@@ -11,12 +11,11 @@
 
 * {
   margin: 0;
-  padding: 0;
+  line-height: calc(1em + 0.5rem);
 }
 
 body {
   background-color: var(--main-color);
-  margin: 0 30px;
   font-family: Aeonik, "Segoe UI", Tahoma, sans-serif;
 }
 
@@ -38,8 +37,6 @@ nav {
 
 nav a {
   text-transform: uppercase;
-  letter-spacing: 4%;
-  line-height: 150%;
   font-size: 15px;
   height: 100%;
   padding: 10px 30px;
@@ -59,8 +56,8 @@ nav a:hover {
 }
 
 nav .logo-link {
-  color: var(--text-color);
   padding: 0;
+  color: var(--text-color);
   font-weight: 900;
 }
 
@@ -81,7 +78,15 @@ nav svg {
   display: none;
 }
 
-@media (max-width: 693px) {
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
   .links-container {
     flex-direction: column;
     align-items: flex-start;
@@ -103,6 +108,10 @@ nav svg {
     width: 100%;
     padding: 20px 30px;
     justify-content: flex-start;
+  }
+
+  nav .logo-link {
+    padding: 0;
   }
 
   .close-sidebar-button {
