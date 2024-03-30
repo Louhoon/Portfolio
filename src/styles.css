@@ -33,6 +33,16 @@ svg {
   user-select: none;
 }
 
+h3{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.arrow-down {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   width: 100%;
   margin-left: auto;
