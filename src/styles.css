@@ -23,6 +23,11 @@ body {
   font-family: Aeonik, "Segoe UI", Tahoma, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 img,
 picture,
 video,
@@ -33,14 +38,25 @@ svg {
   user-select: none;
 }
 
-h3{
+small {
+  text-transform: uppercase;
+  display: block;
+  font-size: 0.75rem;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 200px;
+}
+
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 .arrow-down {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .container {
@@ -69,7 +85,8 @@ h3{
   margin-top: 50px;
 }
 
-.presentation, .goal {
+.presentation,
+.goal {
   display: inline-block;
   width: 40%;
   color: var(--paragraph-color);
@@ -78,6 +95,72 @@ h3{
 .presentation {
   padding-right: 50px;
   margin-top: 50px;
+}
+
+.weather-project-container,
+.itineraryai-project-container {
+  display: grid;
+  grid-template-rows: repeat(2, 300px);
+  grid-template-columns: repeat(6, 200px);
+  justify-content: center;
+}
+
+.weather-project-description,
+.itineraryai-project-description {
+  align-self: center;
+  border: 1px solid var(--paragraph-color);
+  border-radius: 10px;
+  grid-row: 1 / 3;
+  grid-column: 1 / 5;
+  padding: 80px;
+}
+
+.weather-project-overview,
+.itineraryai-project-overview {
+  align-self: center;
+  grid-row: 1 / 3;
+  grid-column: 4 / 7;
+}
+
+.weather-project-overview img,
+.itineraryai-project-overview img {
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 5px -3px 8px rgba(0, 0, 0, 0.2)
+}
+
+.weather-project-description p,
+.itineraryai-project-description p {
+  width: 400px;
+  font-size: 18px;
+  color: var(--paragraph-color);
+}
+
+.weather-project-description h4,
+.itineraryai-project-description h4 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.weather-project-description button,
+.itineraryai-project-description button {
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid var(--paragraph-color);
+  margin-right: 50px;
+  transition: all 200ms ease-in;
+}
+
+.weather-project-description button:hover,
+.itineraryai-project-description button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.github-link:hover {
+  text-decoration: underline;
 }
 
 /* xss */
@@ -95,10 +178,11 @@ h3{
     max-width: 150px;
   }
 
-  .presentation, .goal {
-  display: inline;
-  font-size: 0.5rem;
-}
+  .presentation,
+  .goal {
+    display: inline;
+    font-size: 0.5rem;
+  }
 }
 
 /* xs */
@@ -116,10 +200,11 @@ h3{
     max-width: 200px;
   }
 
-  .presentation, .goal {
-  display: inline;
-  font-size: 0.5rem;
-}
+  .presentation,
+  .goal {
+    display: inline;
+    font-size: 0.5rem;
+  }
 }
 
 /* sm */
@@ -137,10 +222,11 @@ h3{
     max-width: 300px;
   }
 
-  .presentation, .goal {
-  display: inline-block;
-  font-size: 0.6rem;
-}
+  .presentation,
+  .goal {
+    display: inline-block;
+    font-size: 0.6rem;
+  }
 }
 
 /* md */
@@ -170,10 +256,11 @@ h3{
     max-width: 400px;
   }
 
-  .presentation, .goal {
-  display: inline-block;
-  font-size: 0.8rem;
-}
+  .presentation,
+  .goal {
+    display: inline-block;
+    font-size: 0.8rem;
+  }
 }
 
 /* xl */
