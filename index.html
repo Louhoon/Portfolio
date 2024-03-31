@@ -12,7 +12,7 @@
 <body>
 	<header class="header container">
 		<nav>
-			<a href="#" class="logo-link">Voisin-Anastasie Louane</a>
+			<a href="/" class="logo-link">Voisin-Anastasie Louane</a>
 			<input type="checkbox" id="sidebar-active">
 			<label for="sidebar-active" class="open-sidebar-button">
 				<svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
@@ -27,8 +27,8 @@
 							d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
 					</svg>
 				</label>
-				<a href="#" class="home-link">Home</a>
-				<a href="#">Projects</a>
+				<a href="/" class="home-link">Home</a>
+				<a href="#projects">Projects</a>
 				<a href="#">Story</a>
 				<a href="#">Contacts</a>
 			</div>
@@ -59,9 +59,9 @@
 				<path
 					d="m480-320 160-160-56-56-64 64v-168h-80v168l-64-64-56 56 160 160Zm0 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
 			</svg></a>
-		<small>scroll</small>
+		<small class="scroll">scroll</small>
+		<h3>My Projects</h3>
 		<section id="projects" class="projects container">
-			<h3>My Projects</h3>
 			<article class="weather-project-container">
 				<div class="weather-project-description">
 					<h4>Weather Dashboard Project</h4>
@@ -69,25 +69,24 @@
 						real-time
 						updates and
 						intuitive visuals, it offers seamless weather tracking and forecasting.</p>
-					<button><a href="https://meteo-dashboard.netlify.app/" target="_blank">LIVE DEMO</a></button>
+					<a href="https://meteo-dashboard.netlify.app/" target="_blank"><button>LIVE DEMO</button></a>
 					<a href="https://github.com/Louhoon/Weather-Dashboard" target="_blank" class="github-link">View Code</a>
 				</div>
 				<div class="weather-project-overview">
 					<img src="images/weather-dashboard.png" alt="An overview of the Weather Dashboard project">
 				</div>
 			</article>
-			<article class="weather-project-container">
-				<div class="weather-project-description">
-					<h4>Weather Dashboard Project</h4>
-					<p>Immerse yourself in my weather dashboard project, a sleek fusion of functionality and design. With
-						real-time
-						updates and
-						intuitive visuals, it offers seamless weather tracking and forecasting.</p>
-					<button><a href="https://meteo-dashboard.netlify.app/" target="_blank">LIVE DEMO</a></button>
-					<a href="https://github.com/Louhoon/Weather-Dashboard" target="_blank" class="github-link">View Code</a>
+			<article class="world-clock-project-container">
+				<div class="world-clock-project-description">
+					<h4>World Clock Project</h4>
+					<p>Dive into my world clock project, a minimalist marvel offering seamless time tracking across global time
+						zones. With
+						sleek design and intuitive interface, users can effortlessly stay connected worldwide.</p>
+					<a href="https://multiple-timezone-clock.netlify.app/" target="_blank"><button>LIVE DEMO</button></a>
+					<a href="https://github.com/Louhoon/World-Clock" target="_blank" class="github-link">View Code</a>
 				</div>
-				<div class="weather-project-overview">
-					<img src="images/weather-dashboard.png" alt="An overview of the Weather Dashboard project">
+				<div class="world-clock-project-overview">
+					<img src="images/world-clock.png" alt="An overview of the World Clock project">
 				</div>
 			</article>
 			<article class="itineraryai-project-container">
@@ -96,7 +95,7 @@
 					<p>Explore my itinerary AI, your personalized travel companion. Simply input your destination, and let the AI
 						craft a
 						tailored itinerary filled with recommendations and must-see attractions.</p>
-					<button><a href="https://itineraryai.netlify.app/" target="_blank">LIVE DEMO</a></button>
+					<a href="https://itineraryai.netlify.app/" target="_blank"><button>LIVE DEMO</button></a>
 					<a href="https://github.com/Louhoon/ItineraryAI" target="_blank" class="github-link">View Code</a>
 				</div>
 				<div class="itineraryai-project-overview">
@@ -104,7 +103,38 @@
 				</div>
 			</article>
 		</section>
+		<h4 class="d-flex-center">MY SKILLS</h4>
+		<section class="skills container">
+			<div class="image-container">
+				<img src="images/desk-coding.jpg" class="desk-coding"
+					alt="Image that represents a desk with a monitor, code is written.">
+			</div>
+			<div class="content-container">
+				<div class="logo-container">
+					<div class="logo"><img src="images/html5.png" alt="Logo of HTML5"><small>HTML5</small></div>
+					<div class="logo"><img src="images/css3.png" alt="Logo of CSS3"><small>CSS3</small></div>
+					<div class="logo"><img src="images/javascript.png" alt="Logo of JavaScript"><small>JavaScript</small></div>
+					<div class="logo"><img src="images/git.png" alt="Logo of Git"><small>Git</small></div>
+					<div class="logo"><img src="images/github.png" alt="Logo of GitHub"><small>GitHub</small></div>
+					<div class="logo"><img src="images/hosting.png"
+							alt="Logo of Netlify, a hosting platform"><small>Hosting</small>
+					</div>
+					<div class="logo"><img src="images/api.png" alt="Logo to represent an API"><small>API</small></div>
+					<div class="logo"><img src="images/openai.png" alt="Logo of OpenAI"><small>AI</small></div>
+				</div>
+				<div class="other-skills">
+					<h4>Other Skills</h4>
+					<p>styled-component, UX, UI, Windows, MacOS</p>
+				</div>
+			</div>
+		</section>
 	</main>
+	<footer>
+		<div class="footer">
+			<p>© VOISIN-ANASTASIE LOUANE</p>
+			<a href="mailto:louane.voisin@hotmail.com">louane.voisin@hotmail.com</a>
+		</div>
+	</footer>
 </body>
 
 </html>
