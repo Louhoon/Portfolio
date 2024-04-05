@@ -1,0 +1,134 @@
+:root {
+  --main-color: #f5f3f0;
+  --text-color: #232121;
+  --paragraph-color: #656464;
+}
+
+* {
+  margin: 0;
+	padding: 0;
+  line-height: calc(1em + 0.5rem);
+	list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-color);
+  font-family: Aeonik, "Segoe UI", Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+.story {
+	display: flex;
+	margin: 150px auto;
+}
+
+.my-story {
+	display: flex;
+	flex-direction: column;
+	margin-left: 200px;
+}
+
+.story img {
+	width: 700px;
+	border-radius: 25px;
+}
+
+.my-story h3 {
+	text-align: left;
+	color: var(--text-color);
+}
+
+.my-story h4 {
+	margin-bottom: 30px;
+	color: var(--text-color);
+}
+
+.my-story p {
+	color: var(--paragraph-color);
+}
+
+.first-sitation {
+	font-size: 1rem;
+	font-weight: 900;
+	color: var(--text-color);
+	margin-bottom: 30px;
+}
+
+.sitation {
+	font-size: 1.5rem;
+	font-weight: 900;
+	color: var(--text-color);
+	text-align: center;
+	margin-bottom: 150px;
+}
+
+.contacts {
+	color: var(--text-color);
+}
+
+ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+ul li {
+	font-size: 1.5rem;
+	font-weight: 900;
+	margin-bottom: 80px;
+}
+
+li a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width:1280px) {
+	.story {
+		display: block;
+	}
+
+	.my-story {
+		margin: 0;
+	}
+
+	.my-story h3 {
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.story img {
+		margin: 0 auto;
+	}
+
+	.first-sitation {
+		font-size: 1.25rem;
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.story img {
+		min-width: 320px;
+	}
+
+	.footer {
+		font-size: 0.25rem;
+	}
+}

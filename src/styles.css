@@ -136,7 +136,7 @@ h3 {
 .world-clock-project-overview img {
   border-radius: 10px;
   box-shadow: 5px -3px 8px rgba(0, 0, 0, 0.2);
-  margin-top: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .weather-project-description p,
@@ -254,6 +254,15 @@ footer {
   color: var(--paragraph-color);
 }
 
+span a{
+  color: black !important;
+  font-weight: 800;
+}
+
+.github:hover {
+  text-decoration: underline;
+}
+
 /* xss */
 
 @media (min-width: 320px) {
@@ -300,7 +309,7 @@ footer {
   }
 
   .footer {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -345,10 +354,6 @@ footer {
   .goal {
     display: inline-block;
     font-size: 0.6rem;
-  }
-
-  .footer {
-    font-size: 1rem;
   }
 
   .skills {
@@ -426,9 +431,5 @@ footer {
 
   .hero img {
     max-width: 600px;
-  }
-
-  .footer {
-    font-size: 1.5rem;
   }
 }
